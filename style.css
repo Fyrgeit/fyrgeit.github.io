@@ -1,13 +1,27 @@
 body
 {
-    padding: 0px;
+    font-family: 'Gemunu Libre';
+    
+    background-color: #1B2430;
+    color: #F2F5F2;
+    margin: 0px;
 }
 
 header
 {
-    background-color: cornflowerblue;
-    border: solid;
-    width: 100%;
-    margin: 0px;
+    background-color: #FFCC00;
+    width: 90vw;
+    height: 10vh;
+    margin: auto;
+    padding: auto;
+    border-radius: 20px;
     text-align: center;
 }
+
+/* Färger
+    #F2F5F2 vit
+    #A9AFB0 grå
+    #FFCC00 gul
+    #D53938 röd
+    #1B2430 mörkblå
+*/
