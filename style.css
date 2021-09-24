@@ -24,6 +24,7 @@ h1 {
 }
 
 section {
+  flex-grow: 1;
   background-color: #f2f5f2;
   border-radius: 20px;
   padding: 20px;
@@ -33,6 +34,11 @@ section {
 
 .image{
   background-color: #a9afb0;
+}
+
+#gurka{
+  text-align: center;
+  margin: 50px 0;
 }
 
 /* Färger
