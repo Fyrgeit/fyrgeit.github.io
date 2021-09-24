@@ -1,21 +1,19 @@
-body
-{
-    font-family: 'Gemunu Libre';
-    
-    background-color: #1B2430;
-    color: #F2F5F2;
-    margin: 0px;
+body {
+  font-family: "Gemunu Libre";
+
+  background-color: #1b2430;
+  color: #f2f5f2;
+  margin: 0px;
 }
 
-header
-{
-    background-color: #FFCC00;
-    width: 90vw;
-    height: 10vh;
-    margin: auto;
-    padding: auto;
-    border-radius: 20px;
-    text-align: center;
+header {
+  background-color: #ffcc00;
+  width: 90vw;
+  height: 10vh;
+  margin: auto;
+  padding: auto;
+  border-radius: 20px;
+  text-align: center;
 }
 
 /* Färger
