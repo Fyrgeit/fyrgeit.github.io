@@ -1,15 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap");
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Gemunu Libre";
-  padding: 10px;
+}
+
+body {
   background-color: #1b2430;
   color: #f2f5f2;
 }
 
+p {
+  font-size: 3vh;
+  margin: 5px 0px;
+}
+
 header {
   background-color: #ffcc00;
-  width: 60vw;
+  width: 40%;
   margin: 20px auto;
   padding: 20px 0px;
   border-radius: 20px;
@@ -19,29 +29,65 @@ header {
 
 h1 {
   margin: 5px 0px;
+  font-size: 200%;
+}
+
+h2 {
+  margin: 5px 0px;
+  font-size: 100%;
+}
+
+section h1 {
+  font-size: 150%;
+  text-align: center;
 }
 
 .container {
+  width: 90%;
+  margin: auto;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 section {
-  flex-grow: 1;
-  flex-wrap: wrap;
+  min-width: 100px;
   background-color: #f2f5f2;
   border-radius: 20px;
-  padding: 20px;
-  margin: 20px;
+  padding: 15px;
+  margin: 10px;
   color: #1b2430;
+}
+
+.nameLinkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 300px;
 }
 
 .image{
   background-color: #a9afb0;
 }
 
-#gurka{
-  text-align: center;
-  margin: 50px 0;
+img {
+  width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
 
 /* Färger
