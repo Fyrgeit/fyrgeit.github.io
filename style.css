@@ -27,6 +27,7 @@ h1 {
 
 section {
   flex-grow: 1;
+  flex-wrap: wrap;
   background-color: #f2f5f2;
   border-radius: 20px;
   padding: 20px;
