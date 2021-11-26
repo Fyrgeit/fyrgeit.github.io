@@ -14,8 +14,9 @@ body {
 }
 
 p {
-  font-size: 55%;
+  font-size: min(55%, 90vw);
   margin: 5px 0px;
+  width: min(50ch, 80vw);
 }
 
 header {
@@ -25,7 +26,6 @@ header {
   padding: 2vmin;
   border-radius: 3vmin;
   text-align: center;
-  
 }
 
 h1 {
@@ -48,19 +48,18 @@ section h1 {
 }
 
 .container {
-  width: 100%;
-  margin: auto;
+  margin: 5vmin;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 section {
-  flex: 1;
+  border-radius: 3vmin;
+  /*max-width: 80vh;*/
   background-color: #f2f5f2;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 10px;
+  padding: 2vmin;
+  margin: 2vmin;
   color: #1b2430;
 }
 
