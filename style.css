@@ -9,8 +9,13 @@
 }
 
 body {
-  background-color: #1b2430;
-  color: #f2f5f2;
+  background-image: url("pexels-hasan-albari-1229861.jpg");
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  /*background-color: #fafafa;*/
 }
 
 p {
@@ -19,9 +24,10 @@ p {
 }
 
 header {
-  background-color: #ffcc00;
   padding: 2vmin;
   text-align: center;
+  background-color: #fafafa;
+  border-bottom: 2px solid #e0e0e0;
 }
 
 h1 {
@@ -48,12 +54,11 @@ section h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #fafafa;
 }
 
 section {
-  border-radius: 3vmin;
-  /*max-width: 80vh;*/
-  background-color: #f2f5f2;
+  background-color: #e0e0e0;
   padding: 2vmin;
   margin: 2vmin;
   color: #1b2430;
@@ -73,7 +78,7 @@ section {
 }
 
 .image{
-  background-color: #a9afb0;
+  background-color: #c0c0c0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,11 +103,3 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
-
-/* Färger
-    #F2F5F2 vit
-    #A9AFB0 grå
-    #FFCC00 gul
-    #D53938 röd
-    #1B2430 mörkblå
-*/
