@@ -45,16 +45,21 @@ a {
 }
 
 section h1 {
-  font-size: 80%;
+  font-size: 0.8em;
   text-align: center;
 }
 
 .container {
-  margin: 5vmin;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin: 1rem 0;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr;
   background-color: #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  }
 }
 
 section {
@@ -62,7 +67,6 @@ section {
   padding: 2vmin;
   margin: 2vmin;
   color: #1b2430;
-  width: min(20ch, 90vw);
 }
 
 .nameLinkContainer {
