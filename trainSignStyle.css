@@ -9,12 +9,9 @@
 }
 
 .sign {
-    width: 1200px;
-    height: 500px;
-    display: grid;
     background-color: #313436;
-    grid-template: 2fr 1fr 1fr 1fr/ 1fr;
-    row-gap: 4px;
+    width: 1200px;
+    padding: 2px 12px;
 }
 
 .first {
@@ -36,6 +33,7 @@ p.small {
     flex-grow: 1;
     justify-content: space-between;
     background-color: #3d4144;
+    margin: 10px 0;
 }
 
 .vertCenter {
@@ -54,7 +52,7 @@ p.small {
     border-radius: 0.25em;
 }
 
-.text {
+p {
     color: white;
     align-items: center;
     font-size: 1em;
@@ -62,6 +60,21 @@ p.small {
     margin: 0 0.25em;
 }
 
+marquee {
+    color: white;
+    margin: 0;
+}
+
 .english {
     color: #ffdc01;
+}
+
+#topRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+img {
+    height: 1em;
 }
