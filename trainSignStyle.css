@@ -5,13 +5,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    font-size: 50px;
+    font-size: 4vw;
 }
 
 .sign {
     background-color: #313436;
-    width: 1200px;
-    padding: 2px 12px;
+    width: 100%;
+    padding: 1vw;
 }
 
 .first {
@@ -20,11 +20,11 @@
 }
 
 .big {
-    font-size: 75px;
+    font-size: 1.5rem;
 }
 
 p.small {
-    font-size: 45px;
+    font-size: 0.8em;
     font-weight: 300;
 }
 
@@ -33,7 +33,7 @@ p.small {
     flex-grow: 1;
     justify-content: space-between;
     background-color: #3d4144;
-    margin: 10px 0;
+    margin: 0.5vw 0;
 }
 
 .vertCenter {
