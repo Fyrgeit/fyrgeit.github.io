@@ -48,17 +48,3 @@ for (let i = 1; i < data.length; i++) {
     container.append(newDiv);
   }
 }
-
-const api_key = "8ade30c6140f4c08b5ac38690f524819";
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-const apiUrl = `http://api.sl.se/api2/realtimedeparturesv4.json?key=${api_key}&siteid=9181&timewindow=30`;
-
-fetch(  
-  proxyUrl + apiUrl
-)
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    console.log(data);
-  });
