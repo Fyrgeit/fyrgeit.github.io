@@ -1,12 +1,16 @@
 let data = [
   ["Kunskapskrav", "Steg E", "Steg C", "Steg A"],
   [
-    "K2 - I arbetet utvecklar eleven kod som med...",
-    "I arbetet utvecklar eleven kod som med tillfredsställande resultat följer standarder och omfattar någon av de grundläggande teknikerna för märkspråk och stilmallar.",
-    "I arbetet utvecklar eleven kod som med tillfredsställande resultat följer standarder och som omfattar några av de grundläggande teknikerna för märkspråk och stilmallar.",
-    "I arbetet utvecklar eleven kod som med gott resultat följer standarder och som omfattar flera av de grundläggande teknikerna för märkspråk och stilmallar.",
+    "Kunskap",
+    "Läraren har vissa kunskaper inom ämnet som läraren undervisar i.",
+    "Läraren har goda kunskaper inom ämnet som läraren undervisar i.",
+    "Läraren har mycket goda kunskaper inom ämnet som läraren undervisar i.",
   ],
-  ["2 - Eleven bearbetar också..", "Steg E", "Steg C", "Steg A"],
+  ["Engagemang",
+    "Läraren bryr sig knappt om ämnet de undervisar i och vill knappt att eleverna ska bry sig om ämnet.",
+    "Läraren bryr sig om ämnet de undervisar i och vill att eleverna ska bry sig om ämnet.",
+    "Läraren bryr sig väldigt mycket om ämnet de undervisar i och vill väldigt gärna att eleverna ska bry sig om ämnet."
+  ],
   ["Kunskapskrav", "Steg E", "Steg C", "Steg A"],
 ];
 
