@@ -13,6 +13,11 @@ p {
 
 input {
     margin: 1vh;
+    font-size: 0.6em;
+}
+
+button {
+    font-size: 0.6em;
 }
 
 #results {
@@ -30,7 +35,6 @@ input {
 
 .topRow {
     display: flex;
-    justify-content: space-evenly;
     background-color: lightgray;
     border-bottom: 1px solid gray;
 }
@@ -44,11 +48,11 @@ input {
 .operator {
     flex-grow: 1;
     text-align: center;
+    text-align: left;
 }
 
 .type {
     flex-grow: 1;
-    text-align: center;
 }
 
 .line {
