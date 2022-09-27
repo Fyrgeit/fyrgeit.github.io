@@ -4,20 +4,37 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
-    font-size: 5vh;
+    font-size: 3vh;
+}
+
+body {
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 p {
-    margin: 0 1vh;
+    margin: 0.2rem;
+}
+
+p#desc, p.topSpot{
+    margin-left: 0;
+    margin-right: 0;
 }
 
 input {
-    margin: 1vh;
-    font-size: 0.6em;
+    margin: 1vh 0;
 }
 
-button {
-    font-size: 0.6em;
+#clButton {
+    width: 1.5rem;
+}
+
+#stButton {
+    padding: 0 0.2rem;
 }
 
 #results {
@@ -30,13 +47,14 @@ button {
     display: flex;
     flex-direction: column;
     border: 1px gray solid;
-    margin: 1vh;
+    margin: 0.2rem 0;
 }
 
 .topRow {
     display: flex;
     background-color: lightgray;
     border-bottom: 1px solid gray;
+    font-weight: bold;
 }
 
 .bottomRow {
@@ -60,4 +78,8 @@ button {
     color: white;
     padding: 0.5vh 1vh;
     border-radius: 2vh;
+}
+
+.time {
+    font-weight: bold;
 }
