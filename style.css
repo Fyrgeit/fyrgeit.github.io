@@ -15,7 +15,7 @@ body {
 main {
   width: 80%;
   margin: auto;
-  /*background-color: #fafafa;*/
+  margin-top: 0.2rem;
 }
 
 p {
@@ -26,6 +26,7 @@ p {
 header {
   text-align: center;
   background-color: #fafafa;
+  padding-top: 0.2rem;
 }
 
 h1 {
