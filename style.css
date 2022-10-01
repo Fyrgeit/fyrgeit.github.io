@@ -28,7 +28,7 @@ header {
   background-color: #F1F1ED;
   padding-top: 0.2rem;
   border-radius: 0.2rem;
-  overflow: hidden;
+  overflow: hiddenx;
 }
 
 h1 {
@@ -105,10 +105,11 @@ section {
 a:link, a:visited {
   text-decoration: none;
   color: #E8B035;
-  transition: color 200ms;
+  transition: color 200ms, transform 200ms;
   transition-timing-function: ease-in-out;
 }
 
 a:hover, a:active {
   color: #C7411E;
+  transform: scale(1.1);
 }
