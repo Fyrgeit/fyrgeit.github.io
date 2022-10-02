@@ -37,6 +37,37 @@ h1 {
   color: #3B363D;
 }
 
+section:has(h1.rainbow) {
+  display: grid;
+}
+
+h1.rainbow {
+  place-self: center;
+  font-size: 2rem;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255,0,0,1) 0%,
+    rgba(255,255,0,1) 20%,
+    rgba(0,255,255,1) 50%,
+    rgba(255,0,255,1) 80%,
+    rgba(255,0,0,1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: rainbow-ani 2s infinite ease-in-out alternate;
+} 
+
+@keyframes rainbow-ani {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 h2 {
   margin: 2vmin 0;
   font-size: 70%;
