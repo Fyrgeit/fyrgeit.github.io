@@ -1,0 +1,42 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    background-color: lightslategray;
+}
+
+section {
+    background-color: lightsteelblue;
+    place-self: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.hunger, .boredom {
+    margin-bottom: 0.5rem;
+}
+
+button.infoBox, .tick {
+    display: none;
+}
+
+p.desc {
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.5rem;
+}
