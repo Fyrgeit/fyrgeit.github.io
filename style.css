@@ -126,18 +126,32 @@ main section {
     overflow: hidden;
     filter: drop-shadow(0 0 0.5rem var(--shadow-1));
     padding: 1rem;
+    color: var(--light-text-1);
 }
 
 main section h1 {
-    color: var(--light-text-1);
+    color: inherit;
     font-size: 3rem;
     text-align: center;
 }
 
 main section p {
-    color: var(--light-text-1);
+    color: inherit;
     font-size: 1.5rem;
     margin-top: 1rem;
+}
+
+main a {
+    display: block;
+    color: inherit;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: all 0.1s ease;
+}
+
+main a:hover {
+    scale: 110%;
 }
 
 #rainbow {
