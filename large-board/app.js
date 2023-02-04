@@ -41,7 +41,7 @@ function getStations() {
 
         let newP = document.createElement("p");
         newP.classList.add("topSpot");
-        newP.innerHTML = "Visar avgångar för: " + topSpot.name;
+        newP.innerHTML = `Visar avgångar för: ${topSpot.name} (${topSpot.extId})`;
         main.appendChild(newP);
 
         let departureURL = `https://api.resrobot.se/v2.1/departureBoard?id=${topSpot.extId}&duration=60&format=json&accessId=${resRobotKey}`;

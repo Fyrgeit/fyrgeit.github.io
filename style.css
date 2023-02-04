@@ -10,8 +10,10 @@
 :root {
     --dark-back-1: #191e24;
     --dark-back-2: #272e37;
+
     --light-text-1: #ffffff;
     --light-text-2: #bdbdc7;
+    --light-text-3: #8a8a92;
 
     --shadow-1: rgba(0, 0, 0, 0.5);
     --shadow-2: rgba(128, 255, 192, 1);
@@ -103,12 +105,18 @@ nav h2 {
 }
 
 nav a {
+    display: inline-block;
+    text-align: center;
     transition: all 0.1s ease;
 }
 
 nav a:hover,
 nav a:focus-visible {
     scale: 110%;
+}
+
+.current-page {
+    color: var(--light-text-3)
 }
 
 main {
@@ -121,7 +129,7 @@ main {
 
 main section {
     background-color: var(--dark-back-2);
-    width: min(60ch, 100%);
+    width: min(65ch, 100%);
     border-radius: 1rem;
     overflow: hidden;
     filter: drop-shadow(0 0 0.5rem var(--shadow-1));
@@ -142,11 +150,9 @@ main section p {
 }
 
 main a {
-    display: block;
     color: inherit;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 1.5rem;
-    text-align: center;
     transition: all 0.1s ease;
 }
 
@@ -155,6 +161,7 @@ main a:hover {
 }
 
 #rainbow {
+    font-weight: bolder;
     background-image: linear-gradient(
         90deg,
         rgba(255, 0, 0, 1) 0%,
