@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
     <title>API-Playground</title>
 </head>
 <body>
     <h1>API-Playground</h1>
-    <p id="station"></p>
-    <p id="dep-num"></p>
+    <div id="input">
+        <label for="origin">Origin</label>
+        <select name="origin" id="origin" selected="Alby (740021731)"></select>
+        <label for="destination">Destination</label>
+        <select name="destination" id="destination"></select>
+        <label for="date">Date</label>
+        <input type="text" name="date" id="date" value="2023-02-08">
+        <button id="search">Search</button>
+    </div>
+    <p>This function returns a list of all trains that begins their service at the selected station, and terminates at or after the other selected station.</p>
+    <p id="num"></p>
     <button id="prev">&lt--</button>
     <button id="next">--&gt</button>
+    <button id="export">Export</button>
     <pre id="output"></pre>
 </body>
 </html>

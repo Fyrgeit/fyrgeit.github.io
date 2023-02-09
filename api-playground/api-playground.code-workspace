@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../large-board"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "api-playground"
+	}
+}
