@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Svenska signalbilder</title>
+</head>
+<body>
+    <h1>Svenska signalbilder i HTML</h1>
+    
+    <section class="correct-signals"></section>
+
+    <p>Ovan visas alla korrekta signalbilder som svenska huvudljussignaler kan visa. Dessa genereras med JavaScript utifrån en array med värden. Till exempel skrivs signalen "Kör, vänta stopp" (5:e fr. v) såhär:</p>
+
+    <code>
+        let signal = ["g", "0", "b", "0"];<br><br>
+        // 0 = släckt, g = grön, r = röd<br>
+        // b = grön blink, w = vit blink
+    </code>
+
+    <p>Det roliga med det är att man kan göra signaler som verkligen inte finns.</p>
+
+    <section class="fake-signals"></section>
+
+    <code>let fake = ["w", "b", "r"];</code>
+
+    <p>Made with love by
+        <a href="..">Fyrgeit</a>
+    </p>
+</body>
+</html>

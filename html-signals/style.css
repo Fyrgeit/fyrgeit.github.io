@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,700&display=swap');
+
+:root {
+    --off: rgb(64, 64, 64);
+    --green: rgb(0, 192, 0);
+    --red: rgb(240, 0, 0);
+    --white: rgb(255, 255, 255);
+}  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(107, 121, 129);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    color: white;
+}
+
+p {
+    text-align: center;
+    text-wrap: balance;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    max-width: 60ch;
+}
+
+code {
+    font-size: 1rem;
+    font-family: monospace;
+    background-color: rgb(80, 88, 103);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main-light-signal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 1rem;
+    padding: 1rem 0;
+    width: 8rem;
+
+    border: solid white 0.4rem;
+    border-radius: 4rem;
+    background-color: rgb(16, 16, 16);
+}
+
+.light {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+
+    border-radius: 1.5rem;
+}
+
+.off {
+    background-color: var(--off);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.green-blink {
+    animation: green-blink 0.5s ease-in infinite alternate;
+}
+
+.white-blink {
+    animation: white-blink 0.5s ease-in infinite alternate;
+}
+
+@keyframes green-blink {
+	0% { background-color: var(--off); }
+	100% { background-color: var(--green); }
+}
+
+@keyframes white-blink {
+	0% { background-color: var(--off); }
+	100% { background-color: var(--white); }
+}
