@@ -1,109 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <script src="app.js" defer></script>
-        <title>Webb-projekt</title>
-    </head>
-    <body>
-        <header>
-            <a href="."><h1>Fyrgeit.se</h1></a>
-            <img
-                src="assets/menu.svg"
-                alt="Menyknapp"
-                onclick="toggleSidebar()"
-                role="button"
-                tabindex="0"
-            />
-        </header>
 
-        <nav class="hidden">
-            <img
-                src="assets/close.svg"
-                alt="Stängknapp"
-                onclick="toggleSidebar()"
-                role="button"
-                tabindex="0"
-            />
-        </nav>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Webb-projekt</title>
+</head>
 
-        <main>
-            <a
-                href="https://fyrgeit.github.io/makerspace/"
-                class="projectWrapper"
-            >
-                <img src="assets/ms.webp" alt="En vacker hemsida" />
-                <div class="liChild">
-                    <h1>NTI Sthlm Makerspace</h1>
-                    <p>
-                        En sida för information om skolans Makerspace och en
-                        påhittad app för namnskyltssystem.
-                    </p>
-                    <p>Gjort i kursen Webbutveckling 1</p>
-                </div>
-            </a>
+<body>
+    <header>
+        <a href=".">
+            <h1>Fyrgeit.se</h1>
+        </a>
+        <img src="assets/menu.svg" alt="Menyknapp" onclick="toggleSidebar()" role="button" tabindex="0" />
+    </header>
 
-            <a href="/train-signs/" class="projectWrapper">
-                <img src="assets/dep.webp" alt="En digital avgångstavla" />
-                <div class="liChild">
-                    <h1>Digitala avgångstavlor</h1>
-                    <p>
-                        Test för moderna avgångstavlor i Stockholms tunnelbana.
-                    </p>
-                    <p>OBS: Tiderna och avgångarna är inte riktiga.</p>
-                </div>
-            </a>
+    <nav class="hidden">
+        <img src="assets/close.svg" alt="Stängknapp" onclick="toggleSidebar()" role="button" tabindex="0" />
+    </nav>
 
-            <a
-                href="https://fyrgeit.github.io/nti-bussar/"
-                class="projectWrapper"
-            >
-                <img
-                    src="assets/buss.webp"
-                    alt="En hemsidasida med 5 st bussavgångar"
-                />
-                <div class="liChild">
-                    <h1>Bussavgångar NTI</h1>
-                    <p>
-                        Live avgångar med bussar mellan Odenplan och NTI Sthlm.
-                        Mycket upskattat av elever.
-                    </p>
-                </div>
-            </a>
+    <main>
+        <a href="https://mans-henriksson-nti.github.io/makerspace/" class="projectWrapper">
+            <img src="assets/ms.webp" alt="En vacker hemsida" />
+            <div class="liChild">
+                <h1>NTI Sthlm Makerspace</h1>
+                <p>
+                    En sida för information om skolans Makerspace och en
+                    påhittad app för namnskyltssystem.
+                </p>
+                <p>Gjort i kursen Webbutveckling 1</p>
+            </div>
+        </a>
 
-            <a href="/large-board/" class="projectWrapper">
-                <img
-                    src="assets/avg.webp"
-                    alt="En tråkig grå hemsida med en sökfunktion"
-                />
-                <div class="liChild">
-                    <h1>Avgångar i Sverige</h1>
-                    <p>
-                        Sök efter en station/hållplats i Sverige och se avgångar
-                        med tåg och buss från stationen.
-                    </p>
-                </div>
-            </a>
+        <a href="/html-signals/" class="projectWrapper">
+            <img src="assets/signals.webp" alt="Svenska järnvägssignaler" />
+            <div class="liChild">
+                <h1>Svenska signalbilder</h1>
+                <p>Testade att rita upp huvudljussignaler i HTML från en JavaScript-array.</p>
+            </div>
+        </a>
 
-            <a
-                href="https://www.youtube.com/@manshenriksson"
-                class="projectWrapper"
-            >
-                <img
-                    src="assets/yt.webp"
-                    alt="En tunnelbanevagn av typ C6 vid Norsborg"
-                />
-                <div class="liChild">
-                    <h1>YouTubekanal</h1>
-                    <p>
-                        Här hittar du fantastiska tågvideor och ibland lite
-                        annat.
-                    </p>
-                </div>
-            </a>
-        </main>
-    </body>
+        <a href="/train-signs/" class="projectWrapper">
+            <img src="assets/dep.webp" alt="En digital avgångstavla" />
+            <div class="liChild">
+                <h1>Digitala avgångstavlor</h1>
+                <p>
+                    Test för moderna avgångstavlor i Stockholms tunnelbana.
+                </p>
+                <p>OBS: Tiderna och avgångarna är inte riktiga.</p>
+            </div>
+        </a>
+
+        <a href="https://fyrgeit.github.io/nti-bussar/" class="projectWrapper">
+            <img src="assets/buss.webp" alt="En hemsidasida med 5 st bussavgångar" />
+            <div class="liChild">
+                <h1>Bussavgångar NTI</h1>
+                <p>
+                    Live avgångar med bussar mellan Odenplan och NTI Sthlm.
+                    Mycket upskattat av minst en elev.
+                </p>
+            </div>
+        </a>
+
+        <a href="/large-board/" class="projectWrapper">
+            <img src="assets/avg.webp" alt="En tråkig grå hemsida med en sökfunktion" />
+            <div class="liChild">
+                <h1>Avgångar i Sverige</h1>
+                <p>
+                    Sök efter en station/hållplats i Sverige och se avgångar
+                    med tåg och buss från stationen.
+                </p>
+            </div>
+        </a>
+
+        <a href="https://www.youtube.com/@manshenriksson" class="projectWrapper">
+            <img src="assets/yt.webp" alt="En tunnelbanevagn av typ C6 vid Norsborg" />
+            <div class="liChild">
+                <h1>YouTubekanal</h1>
+                <p>
+                    Här hittar du fantastiska tågvideor och ibland lite
+                    annat.
+                </p>
+            </div>
+        </a>
+    </main>
+</body>
+
 </html>

@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <script src="app.js" defer></script>
-        <title>Hem</title>
-    </head>
-    <body>
-        <header>
-            <a href="."><h1>Fyrgeit.se</h1></a>
-            <img
-                src="assets/menu.svg"
-                alt="Menyknapp"
-                onclick="toggleSidebar()"
-                role="button"
-                tabindex="0"
-            />
-        </header>
 
-        <nav class="hidden">
-            <img
-                src="assets/close.svg"
-                alt="Stängknapp"
-                onclick="toggleSidebar()"
-                role="button"
-                tabindex="0"
-            />
-        </nav>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Hem</title>
+</head>
 
-        <main>
-            <section>
-                <h1>Välkommen</h1>
-                <p>
-                    Om jag någonsin skaffar domänen Fyrgeit.se får jag se till
-                    att göra någonting mer av det här. Just nu är det bara en
-                    liten sida för att visa mina projekt
-                </p>
-                <p>Kolla, här är en <span id="rainbow">regnbåge!</span></p>
-            </section>
-        </main>
-    </body>
+<body>
+    <header>
+        <a href=".">
+            <h1>Fyrgeit.se</h1>
+        </a>
+        <img src="assets/menu.svg" alt="Menyknapp" onclick="toggleSidebar()" role="button" tabindex="0" />
+    </header>
+
+    <nav class="hidden">
+        <img src="assets/close.svg" alt="Stängknapp" onclick="toggleSidebar()" role="button" tabindex="0" />
+    </nav>
+
+    <main>
+        <section>
+            <h1>Välkommen</h1>
+            <p>
+                Om jag någonsin skaffar domänen Fyrgeit.se får jag se till att göra någonting mer av det här, men just nu är det bara en liten sida för att visa mina projekt. Kolla in dem genom att klicka på menyknappen uppe till höger :)
+            </p>
+            <p>Kolla, här är en <span id="rainbow">regnbåge!</span></p>
+        </section>
+    </main>
+</body>
+
 </html>
