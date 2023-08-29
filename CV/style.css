@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto&family=Merriweather+Sans:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+:root {
+    --accent-red: hsl(0, 100%, 97%);
+    --accent-yellow: hsl(76, 100%, 97%);
+    --accent-green: hsl(144, 100%, 97%);
+    --accent-blue: hsl(208, 100%, 97%);
+}
+
+body {
+    padding: 2rem;
+}
+
+section {
+    border-bottom: 1px black solid;
+    padding-bottom: 1rem;
+}
+
+.contact {
+    width: fit-content;
+}
+
+section {
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+p, li {
+    font-family: 'Merriweather sans';
+    font-size: 0.8rem;
+}
+
+li {
+    font-weight: 300;
+}
+
+h1, h2, h3 {
+    font-family: 'bree serif', serif;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+h1 {
+    font-size:  3rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    
+}
+
+h3 + div, .contact {
+    padding-left: 0.5rem;
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: -0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+h2.red + div div { background-color: var(--accent-red); }
+h2.yellow + div div { background-color: var(--accent-yellow); }
+h2.green + div div { background-color: var(--accent-green); }
+h2.blue + div div { background-color: var(--accent-blue); }
+
+#image-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+img {
+    height: 115.2px;
+    border-radius: 0.5rem;
+    box-shadow: -0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    margin-left: 1rem;
+    margin-block: 0.4rem;
+}
+
+.reference {
+    font-weight: 400;
+    color: midnightblue;
+}

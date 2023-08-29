@@ -16,9 +16,9 @@ originInputEl.addEventListener("input", function() {
 originInputEl.addEventListener("focus", function() {
     debounce(OnInput);
 });
-originInputEl.addEventListener("blur", function() {
+/* originInputEl.addEventListener("blur", function() {
     placesEl.innerHTML = "";
-});
+}); */
 
 
 
@@ -56,6 +56,7 @@ async function OnInput() {
     places.forEach(place => {
         let placeEl = document.createElement("div");
         placeEl.classList.add("place");
+        placeEl.dataset.stop = place;
         
         let placeNameEl = document.createElement("p")
         placeNameEl.classList.add("placeName");
@@ -76,6 +77,9 @@ async function OnInput() {
             placeEl.append(placeCoordEl);
         }
 
+        placeEl.addEventListener("click", function() {
+            console.log(placeEl.dataset.stop.name);
+        })
 
         placesEl.append(placeEl);
     });

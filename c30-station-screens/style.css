@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-neutral-100: #ffffff;
+    --color-neutral-200: #f1f2f3;
+    --color-neutral-300: #d8dadc;
+    --color-neutral-400: #c0c2c6;
+    --color-neutral-500: #73777d;
+    --color-neutral-600: #4c5157;
+    --color-neutral-700: #20252c;
+    --color-neutral-800: #000000;
+    --pos: 0.1;
+    --staircase-width: 144rem;
+    --staircase-height: 126rem;
+    --escalator-width: 246rem;
+    --escalator-height: 174rem;
+}
+
+body {
+    background-color: var(--color-neutral-600);
+}
+
+p {
+    color: var(--color-neutral-100);
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.button-container {
+    margin: 1rem;
+    display: grid;
+    grid-template: 2rem / 1fr 1fr;
+    gap: 2px;
+    width: 5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    align-items: center;
+}
+
+button {
+    background-color: var(--color-neutral-500);
+    color: var(--color-neutral-100);
+    border: none;
+    font-size: 2rem;
+    text-align: center;
+}
+
+button:hover {
+    background-color: var(--color-neutral-400);
+}
+
+#station {
+    padding: 2rem;
+    display: grid;
+    grid-template: 5rem auto 5rem 4rem / 100%;
+    background-color: var(--color-neutral-700);
+}
+
+#floor {
+    background-color: var(--color-neutral-600);
+    height: 1rem;
+    border-radius: 0.5rem;
+}
+
+#above, #below {
+    position: relative;
+}
+
+.station-element {
+    position: absolute;
+}
+
+.station-element.flipped {
+    transform: scale(-1, 1);
+    transform-origin: center;
+}
+
+#above .station-element {
+    bottom: 0;
+}
+
+#below .staircase {
+    top: -1rem;
+}
+
+#below .escalator {
+    top: calc((var(--escalator-height) / 50 * (48 / 174)) * -1 - 1rem);
+}
+
+.escalator {
+    height: calc(var(--escalator-height) / 50);
+    left: 0;
+}
+
+.staircase {
+    height: calc(var(--staircase-height) / 50);
+}
+
+svg * {
+    fill: var(--color-neutral-500);
+}
+
+svg .inverted {
+    fill: var(--color-neutral-700)
+}
+
+#train {
+    background-color: white;
+    margin: 0 2rem;
+}

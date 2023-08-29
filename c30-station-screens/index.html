@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>C30-Skärm</title>
+        <script src="app.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p id="title"></p>
+        <div class="button-container">
+            <button id="left">&lt</button>
+            <button id="right">&gt</button>
+        </div>
+        <div id="station">
+            <div id="above">
+                <svg class="escalator station-element" viewbox="0 0 288 240">
+                    <path class="svg" d="M0,216H0c0-13.25,10.75-24,24-24h13.6c6.63,0,12.97-2.75,17.51-7.59L213.78,15.17C222.85,5.49,235.53,0,248.8,0h15.2c13.25,0,24,10.75,24,24h0c0,13.25-10.75,24-24,24h-13.6c-6.63,0-12.97,2.75-17.51,7.59L74.22,224.83c-9.07,9.68-21.75,15.17-35.02,15.17h-15.2c-13.25,0-24-10.75-24-24Z"/>
+                </svg>
+                <svg class="staircase station-element" viewbox="0 0 192 192">
+                    <polygon class="svg" points="0 192 0 168 24 168 24 144 48 144 48 120 72 120 72 96 96 96 96 72 120 72 120 48 144 48 144 24 168 24 168 0 192 0 192 36 36 192 0 192"/>
+                </svg>
+            </div>
+            <div id="floor"></div>
+            <div id="below">
+                <svg class="staircase station-element flipped" viewbox="0 0 192 192">
+                    <polygon class="svg" points="0 192 0 168 24 168 24 144 48 144 48 120 72 120 72 96 96 96 96 72 120 72 120 48 144 48 144 24 168 24 168 0 192 0 192 36 36 192 0 192"/>
+                </svg>
+                <svg class="escalator station-element" viewbox="0 0 288 240">
+                    <path class="svg" d="M0,216H0c0-13.25,10.75-24,24-24h13.6c6.63,0,12.97-2.75,17.51-7.59L213.78,15.17C222.85,5.49,235.53,0,248.8,0h15.2c13.25,0,24,10.75,24,24h0c0,13.25-10.75,24-24,24h-13.6c-6.63,0-12.97,2.75-17.51,7.59L74.22,224.83c-9.07,9.68-21.75,15.17-35.02,15.17h-15.2c-13.25,0-24-10.75-24-24Z"/>
+                </svg>
+            </div>
+            <div id="train"></div>
+        </div>
+    </body>
+</html>
