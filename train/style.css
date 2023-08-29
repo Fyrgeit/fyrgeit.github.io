@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(84, 113, 121);
+}
+
+.train {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+
+    width: min-content;
+
+    margin: 1rem;
+    padding: 1rem 0rem 0.5rem;
+
+    background-color: rgb(255, 255, 255);
+
+    border-top-left-radius: 4rem 6rem;
+    border-top-right-radius: 4rem 6rem;
+    border-bottom-left-radius: 1rem 1rem;
+    border-bottom-right-radius: 1rem 1rem;
+    overflow: hidden;
+}
+
+.window {
+    height: 2.5rem;
+    width: 3rem;
+
+    margin-top: 0.4rem;
+
+    background-color: rgb(176, 226, 237);
+
+    border-radius: 0.2rem;
+}
+
+.door {
+    display: flex;
+    gap: 0.5rem;
+
+    height: 5rem;
+
+    margin: 0 0.4rem;
+    padding: 0 0.4rem;
+
+    background-color: rgb(73, 159, 244);
+
+    border-radius: 0.4rem;
+}
+
+.door .window {
+    width: 1rem;
+}
+
+.train > .window:first-child {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+.train > .window:last-child {
+    margin-left: 1rem;
+    width: 2rem;
+}
