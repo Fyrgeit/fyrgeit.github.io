@@ -4,12 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
 }
 
 :root {
     --accent-red: hsl(0, 100%, 97%);
-    --accent-yellow: hsl(76, 100%, 97%);
+    --accent-yellow: hsl(56, 100%, 97%);
     --accent-green: hsl(144, 100%, 97%);
     --accent-blue: hsl(208, 100%, 97%);
 }
@@ -21,26 +20,25 @@ body {
 section {
     border-bottom: 1px black solid;
     padding-bottom: 1rem;
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 120ch) {   
+    body > section {
+        grid-template-columns: 1fr;
+    }
 }
 
 .contact {
     width: fit-content;
 }
 
-section {
-    display: grid;
-    column-gap: 2rem;
-    row-gap: 1rem;
-    grid-template: 1fr / 1fr 1fr;
-}
-
 p, li {
     font-family: 'Merriweather sans';
     font-size: 0.8rem;
-}
-
-li {
-    font-weight: 300;
 }
 
 h1, h2, h3 {
@@ -56,7 +54,6 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    
 }
 
 h3 + div, .contact {
@@ -84,8 +81,17 @@ img {
 }
 
 ul {
-    margin-left: 1rem;
     margin-block: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    margin-left: 1rem;
+    font-weight: 300;
+    flex-grow: 1;
+    flex-basis: 40%;
+    min-width: fit-content;
 }
 
 .reference {
