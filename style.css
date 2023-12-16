@@ -137,6 +137,15 @@ main section {
     color: var(--light-text-1);
 }
 
+main section.gallery {
+    width: max-content;
+}
+
+div.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
 main section h1 {
     color: inherit;
     font-size: 3rem;
