@@ -5,9 +5,9 @@ function toggleSidebar() {
 }
 
 let links = [
-    {href: "index.html", name: "Hem"},
-    {href: "projekt.html", name: "Webb-projekt"},
-    {href: "maps.html", name: "Kart-projekt"},
+    {href: "/index.html", name: "Hem"},
+    {href: "/projects/", name: "Webb-projekt"},
+    {href: "/maps/", name: "Kart-projekt"},
 ];
 
 let currentUrl = window.location.href;
