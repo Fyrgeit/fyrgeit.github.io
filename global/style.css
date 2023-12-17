@@ -239,6 +239,12 @@ main a:hover {
     height: 10rem;
     object-fit: cover;
     filter: brightness(0.9);
+    transition: filter 0.2s ease;
+}
+
+.projectWrapper:hover img,
+.projectWrapper:focus-visible img {
+    filter: brightness(1);
 }
 
 .liChild {
@@ -250,6 +256,7 @@ main a:hover {
 
 .liChild h1 {
     color: var(--light-text-1);
+    text-align: center;
     font-size: 1.5rem;
 }
 
