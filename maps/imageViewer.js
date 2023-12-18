@@ -91,7 +91,12 @@ function loadThumbnails() {
         aEl.setAttribute("href", "./viewer.html");
         aEl.addEventListener("click", () => {
             localStorage.setItem("imageKey", key);
-        })
+        });
+        aEl.addEventListener("auxclick", e => {
+            if (e.button == 1) {
+                localStorage.setItem("imageKey", key);
+            }
+        });
 
         let imgEl = document.createElement("img");
         aEl.append(imgEl);
