@@ -24,9 +24,9 @@ const images = {
         title: "Mjölkpallspendeln",
         desc: "Detta är nog en av mina top 3 kartor och kom till när jag tänkte på alla små stackars stationer som ligger längs stambanorna, men inte har haft nån trafik på många år. I denna alternativa verklighet har Sörmlandstrafiken tagit tag i detta problemet och startat trafikkonceptet Mjölkpallspendeln (visst har det en fantastisk slogan?). Historiskt sett är mjölkpallståg långsamma tåg som stannar vid alla möjliga stationer, till skillnad från snälltågen, som bara stannade i de större orterna, som Flen!"
     },
-    "Regionaltåg-01": {
+    "Regionaltåg": {
         title: "Regionaltåg i Sverige",
-        desc: "En geografiskt korrekt karta gjord i Illustrator för att visa hur bra landet täcks av regionaltåg. Inkluderar dock inte SJ:s regionaltåg, för att jag trodde det skulle bli jobbigt, men vid närmare eftertanke blir det ju bara de två X40-linjerna och Kust till kust-tågen."
+        desc: "En geografiskt korrekt karta gjord i Illustrator för att visa hur bra landet täcks av regionaltåg. Har grubblat mycket över vilka av SJ:s linjer man bör visa. De kallar Stockholm-Västerås-Göteborg för regionaltåg, men Ljusdal-Stockholm-Linköping för intercity. Jag har med båda, men inte intercitytågen till Dalarna. Det är inte jättekonsekvent, klaga inte."
     },
     "Järnvägar-i-Mälardalen (1)": {
         title: "Tågtrafik i Mälardalen",
