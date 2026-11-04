@@ -1,33 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
-    <title>Svenska signalbilder</title>
-</head>
-<body>
-    <h1>Svenska signalbilder i HTML</h1>
-    
-    <section class="correct-signals"></section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="app.js" defer></script>
+        <title>Svenska signalbilder</title>
+    </head>
+    <body>
+        <h1>Svenska signalbilder i HTML</h1>
 
-    <p>Ovan visas alla korrekta signalbilder som svenska huvudljussignaler kan visa. Dessa genereras med JavaScript utifrån en array med värden. Till exempel skrivs signalen "Kör, vänta stopp" (5:e fr. v) såhär:</p>
+        <section id="correct-signals"></section>
 
-    <code>
-        let signal = ["g", "0", "b", "0"];<br><br>
-        // 0 = släckt, g = grön, r = röd<br>
-        // b = grön blink, w = vit blink
-    </code>
+        <p>
+            Ovan visas alla korrekta signalbilder som svenska huvudljussignaler
+            kan visa. Dessa genereras med JavaScript utifrån en array med
+            värden. Till exempel skrivs signalen "Kör, vänta stopp" (5:e fr. v)
+            såhär:
+        </p>
 
-    <p>Det roliga med det är att man kan göra signaler som verkligen inte finns.</p>
+        <code>
+            let signal = "g0b0";<br /><br />
+            // 0 = släckt, g = grön, r = röd<br />
+            // b = grön blink, w = vit blink
+        </code>
 
-    <section class="fake-signals"></section>
+        <p>
+            Det roliga med det är att man kan göra signaler som verkligen inte
+            finns.
+        </p>
 
-    <code>let fake = ["w", "b", "r"];</code>
+        <section id="fake-signal"></section>
 
-    <p>Made with love by
-        <a href="..">Fyrgeit</a>
-    </p>
-</body>
+        <code>let fake = "wbr";</code>
+
+        <p>Testa att designa en signal själv!</p>
+
+        <input type="text" id="signalInput" placeholder="Ex.: g0b0" />
+
+        <section id="custom-signal"></section>
+
+        <p>
+            Made with love by
+            <a href="..">Fyrgeit</a>
+        </p>
+    </body>
 </html>

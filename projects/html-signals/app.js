@@ -1,35 +1,26 @@
-let signals = [
-    ["0", "r"],
-    ["g", "0", "g", "0", "g"],
-    ["g", "0", "g"],
-    ["g", "0"],
-    ["g", "0", "b", "0"],
-    ["g", "0", "b", "0", "b"],
-    ["g", "0", "0", "w"],
-];
+let signals = ['0r', 'g0g0g', 'g0g', 'g0', 'g0b0', 'g0b0b', 'g00w'];
 
-let fakes = [
-    ["w", "b", "r"]
-];
+let fake = 'wbr';
 
 let lookup = {
-    "0": "off",
-    "g": "green",
-    "r": "red",
-    "b": "green-blink",
-    "w": "white-blink",
+    0: 'off',
+    g: 'green',
+    r: 'red',
+    b: 'green-blink',
+    w: 'white-blink',
 };
 
-function signalsFromArray(array, targetQuerySelector) {
+function signalsFromArray(signals, targetQuerySelector) {
     let mainEl = document.querySelector(targetQuerySelector);
+    mainEl.innerHTML = '';
 
-    array.forEach(signal => {
-        let signalEl = document.createElement("div");
-        signalEl.classList.add("main-light-signal");
+    signals.forEach((signal) => {
+        let signalEl = document.createElement('div');
+        signalEl.classList.add('main-light-signal');
 
-        signal.forEach(light => {
-            let lightEl = document.createElement("div");
-            lightEl.classList.add("light");
+        signal.split('').forEach((light) => {
+            let lightEl = document.createElement('div');
+            lightEl.classList.add('light');
 
             lightEl.classList.add(lookup[light]);
 
@@ -40,5 +31,10 @@ function signalsFromArray(array, targetQuerySelector) {
     });
 }
 
-signalsFromArray(signals, "section.correct-signals");
-signalsFromArray(fakes, "section.fake-signals");
+signalsFromArray(signals, '#correct-signals');
+signalsFromArray([fake], '#fake-signal');
+signalsFromArray([document.querySelector('input').value], '#custom-signal');
+
+document.querySelector('input').oninput = (e) => {
+    signalsFromArray([e.target.value], '#custom-signal');
+};
